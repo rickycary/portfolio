@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
 </head>
 <body>
     <div id="header">
@@ -38,16 +39,31 @@
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
                     <p>I'm a software engineer and recent General Assembly graduate coming from a leadership background in the medical field. This experience has given me a unique understanding on how fluid teamwork can increase efficiency and strengthen outcomes. I specialize in front-end & back-end technologies, with language proficiencies in Javascript, ReactJS, and Python 3 among others.</p>
+                    
                     <div class="tab-titles">
-                        <p class="tab-links active-link">Skills</p>
-                        <p class="tab-links">Experience</p>
-                        <p class="tab-links">Education</p>
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li><span>UI/UX</span><br>Designing Web/App interface</li>
                             <li><span>Web Development</span><br>Web App Development</li>
                             <li><span>App Development</span><br>Building Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>Experience</li>
+                            <li><span>Web Development</span><br>Experience</li>
+                            <li><span>App Development</span><br>Experience</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>GA SEI Course </li>
+                            <li><span>2023</span><br>Coming Soon</li>
+                            <li><span>2023</span><br>Coming Soon</li>
                         </ul>
                     </div>
                 </div>
