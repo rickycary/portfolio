@@ -145,7 +145,7 @@ nav ul li a:hover::after {
 
 .tab-contents ul li span {
     color: #b54769;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .tab-contents {
@@ -156,7 +156,7 @@ nav ul li a:hover::after {
     display: block;
 }
 
-/* Services */
+/* Skills */
 #services {
     padding: 30px 0;
 }
@@ -169,10 +169,11 @@ nav ul li a:hover::after {
 
 }
 
+/* Font size in boxes */
 .services-list div {
     background: #262626;
     padding: 40px;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 300;
     border-radius: 10px;
     transition: background 0.5s, tranform 0.5s;
@@ -242,7 +243,7 @@ nav ul li a:hover::after {
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
-    font-size: 14px;
+    font-size: 18px;
     transition: height 0.5s;
 }
 

@@ -20,9 +20,9 @@
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-sharp fa-solid fa-xmark" onclick="closeMenu()"></i>
+                    <!-- <i class="fas fa-sharp fa-solid fa-xmark" onclick="closeMenu()"></i> -->
                 </ul>
-                <i class="fas fa-solid fa-bars" onclick="openMenu()"></i>
+                <!-- <i class="fas fa-solid fa-bars" onclick="openMenu()"></i> -->
 
             </nav>
             <div class="header-text">
@@ -45,16 +45,9 @@
                     <p>I'm a software engineer and recent General Assembly graduate coming from a leadership background in the medical field. This experience has given me a unique understanding on how fluid teamwork can increase efficiency and strengthen outcomes. I specialize in front-end & back-end technologies, with language proficiencies in Javascript, ReactJS, and Python 3 among others.</p>
                     
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>UI/UX</span><br>Designing Web/App interface</li>
-                            <li><span>Web Development</span><br>Web App Development</li>
-                            <li><span>App Development</span><br>Building Apps</li>
-                        </ul>
+                        <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
@@ -65,9 +58,16 @@
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>2022</span><br>GA SEI Course </li>
-                            <li><span>2023</span><br>Coming Soon</li>
-                            <li><span>2023</span><br>Coming Soon</li>
+                            <li><span>2022-Current</span><br>General Assembly Full Stack Software Engineering Course</li>
+                            <li><span>2017</span><br>Associates in Science / LVN Certification</li>
+                            <li><span>2016</span><br>Associates in Business Administration</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents active-tab" id="certifications">
+                        <ul>
+                            <li><span>General Assembly</span><br>Software Engineering Immersive (April 1st Projected Graduation Day)</li>
+                            <li><span>Codecademy</span><br>Learn HTML Course<br>Learn CSS Course<br>Learn Javascript Course</li>
+                            <!-- <li><span>Add in the future</span><br></li> -->
                         </ul>
                     </div>
                 </div>
@@ -75,32 +75,36 @@
         </div>
     </div>
 
-    <!-- Services -->
+    <!-- Skills -->
     <div id="services">
-        <h1 class="sub-title">My Services</h1>
+        <div class="container">
+        <h1 class="sub-title">My Skills</h1>
         <div class="services-list">
             <div>
                 <i class="fa-brands fa-html5"></i>
                 <i class="fa-brands fa-css3-alt"></i>
                 <i class="fa-brands fa-js"></i>
                 <i class="fa-brands fa-node-js"></i>
-                <h2>Web Design</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique voluptates enim sed distinctio corporis soluta, doloremque a neque sequi iste maxime nemo animi aperiam eveniet atque dolores obcaecati. Consequatur, voluptas!</p>
-                <a href="#">Learn More</a>
-            </div>
-            <div>
                 <i class="fa-brands fa-react"></i>
-                <h2>Front-End</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique voluptates enim sed distinctio corporis soluta, doloremque a neque sequi iste maxime nemo animi aperiam eveniet atque dolores obcaecati. Consequatur, voluptas!</p>
-                <a href="#">Learn More</a>
+                <h2>Front-End Web Development</h2>
+                <p>HTML / CSS / Javascript / Node.js / AJAX / jQuery / React / Vue.js / SASS / Bootstrap</p>
+                <!-- <a href="#">Learn More</a> -->
             </div>
             <div>
-                <i class="fa-brands fa-python"></i>
-                <h2>Back-End</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique voluptates enim sed distinctio corporis soluta, doloremque a neque sequi iste maxime nemo animi aperiam eveniet atque dolores obcaecati. Consequatur, voluptas!</p>
-                <a href="#">Learn More</a>
+                <i class="fa-brands fa-python"></i>                
+                <h2>Back-End Web Development</h2>
+                <p>Express / Python3 / Ruby / Markdown </p>
+                <!-- <a href="#">Learn More</a> -->
+            </div>
+            <div>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-git-alt"></i>
+                <h2>APIs & Databases</h2>
+                <p>API / Mongoose / MongoDB / Postman / Git / Github / PostgreSQL / Netlify / Render / </p>
+                <!-- <a href="#">Learn More</a> -->
             </div>
         </div>
+    </div>
     </div>
 
     <!-------------------- Portfolio ------------------->
@@ -109,31 +113,70 @@
             <h1 class="sub-title">My Projects</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="images/work-1.png">
+                    <img src="images/MyCodingJournalProject.png">
                     <div class="layer">
-                        <h3>Project 1</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, sint. Doloremque modi, soluta doloribus saepe ut dolorem voluptatum. Aliquid tenetur est laborum ipsam obcaecati, numquam corporis eaque necessitatibus placeat dolore.</p>
-                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <h3>Project 1
+                            <br>
+                            My Coding Journal
+                            <br>
+                            Node / Express / MongoDB / Mongoose / Javascript / CSS / Markdown / Render
+                        </h3>
+                        <p>
+                            ● Created a full-stack application where users can keep track of their progress while learning how to code.
+                            <br>
+                            ● Designed this project with full CRUD operations that uses MongoDB to set up a database on the backend for information storage.
+                            <br>
+                            ● Launched the application by deploying it using Render.com.
+                        </p>
+                        <a href="https://turmericproject2.onrender.com/" target="_bl
+                        "><i class="fa-solid fa-star"></i></a>
+                        <a href="https://github.com/rickycary/My_Coding_Journal"><i class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/work-2.png">
+                    <img src="images/DotBeatsProject.png">
                     <div class="layer">
-                        <h3>Project 2</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quo beatae sed provident dolores nihil dignissimos aut qui ratione ab officiis tenetur animi, officia, voluptates adipisci aliquid nulla consequatur commodi?</p>
-                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <h3>Project 2
+                            <br>
+                            DotBeats
+                            <br>
+                            React JS / React-Router-Dom / Node.JS / Mongoose / MongoDB / Javascript / Render / Netlify / Markdown
+                        </h3>
+                        <p>
+                            ● Developed an application that helps users keep track of their favorite songs/music videos.
+                            <br>
+                            ● Supervised this project as the product manager by prioritizing tasks and handling merges through github while resolving any errors in the code.
+                            <br>
+                            ● Advanced this project with a backend API that was set up with Mongo to display full CRUD routes.
+                        </p>
+                        <a href="https://reliable-marzipan-f9fc1b.netlify.app/" target='_blank'><i class="fa-solid fa-star"></i></a>
+                        <a href="https://github.com/Camacho-A/project3-frontend" target='_blank'><i class="fa-brands fa-github"></i></a>
+                        <a href="https://github.com/Camacho-A/project3-backend" target='_blank'><i class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/work-3.png">
+                    <img src="images/AmiiboProject.png">
                     <div class="layer">
-                        <h3>Project 3</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum porro placeat optio molestiae eos aliquam unde, itaque voluptatem a odit fugit omnis harum beatae maiores possimus. Totam alias nesciunt est.</p>
-                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <h3>Project 3
+                            <br>
+                            Amiibo API Project
+                            <br>
+                            HTML / CSS / Javascript / Node.JS
+                        </h3>
+                        <p>
+                            ● Generated an application where users can search for Amiibos, a popular product of Nintendo with a robust character catalog.
+                            <br>
+                            ● Produced a front-end application using HTML/CSS/Javascript/JQuery.
+                            <br>
+                            ● Completed an application that is hosted through Github and uses Ajax to retrieve information from the AmiiboAPI database.
+                        </p>
+                        <a href="https://rickycary.github.io/Amiibo_API_Project/" target='_blank'><i class="fa-solid fa-star"></i></a>
+                        <a href="https://github.com/rickycary/Amiibo_API_Project" target="_blan
+                        "><i class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn">See more</a>
+            <!-- <a href="#" class="btn">See more</a> -->
         </div>
     </div>
 
@@ -163,7 +206,7 @@
         </div>
     </div>
     <div class="copyright">
-        <p>Copyright @ Richard. Made with <i class="fa-solid fa-heart"></i> Easy Tutorials</p>
+        <!-- <p>Copyright @ Richard. Made with <i class="fa-solid fa-heart"></i> Easy Tutorials</p> -->
     </div>
 </div>
 
