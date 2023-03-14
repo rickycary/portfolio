@@ -10,6 +10,13 @@ function opentab(tabName){
     }
     event.currentTarget.classList.add("active-link");
     document.getElementById(tabName).classList.add("active-tab");
-
-
 }
+
+// const sideMenu = document.getElementById("sidemenu");
+// function openMenu(){
+//     sideMenu.style.right = "0"
+// }
+// function closeMenu(){
+//     sideMenu.style.right = "-200px"
+// }
+
